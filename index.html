@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-container">
+        <p class="todo-heading">To-Do</p>
+        <div class="todo-new-main">
+          <div class="todo-item">
+            <input
+              type="checkbox"
+            />
+            <textarea type="text" rows="1" class="todo-text" value=""></textarea>
+          </div>
+          <button class="todo-new" type="button" onclick="NewItem()">
+            <p>+</p>
+          </button>
+        </div>
+
+
+        <ul class="list">
+          <li>
+            <div class="todo-item">
+              <input
+                type="checkbox"
+                id="todo-checkbox"
+                name="display"
+                onclick="StrikeThrough()"
+              />
+              <textarea type="text" rows="1" class="todo-text" name="display" value="" id="input-box"></textarea>
+            </div>
+            <img src="delete_svg.svg" height="50px" width="50px" margin="5px 5px" onclick="">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

@@ -3,7 +3,11 @@ function NewItem() {
   }
 
   function StrikeThrough() {
-    var input_box = document.getElementById("input-box");
-    var str = value.strike();
-    document.getElementById("input-box").value = str;
+    var checkbox = document.getElementById("todo-checkbox");
+    var textarea = document.getElementById("input-box");
+
+    if(checkbox.checked === true)
+      textarea.style.textDecoration = "line-through";
+    else
+      textarea.style.textDecoration = 'none';
   }
