@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    background: url("./todo-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container {
+    display: block;
+    position: relative;
+    margin: 5% auto;
+    width: 45%;
+    height: auto;
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    padding: 1rem;
+    backdrop-filter: blur(15px);
+  }
+  .container .todo-container {
+    text-align: center;
+  }
+  .container .todo-container .todo-heading {
+    font-family: "Manhattan";
+    padding: 1rem;
+    /* font-weight: ; */
+    font-size: 3rem;
+    color: black;
+  }
+  button {
+    backdrop-filter: blur(10px);
+    background-color: black;
+  }
+  .todo-new-main {
+    display: flex;
+    margin-top: 5%;
+  }
+  .container .todo-new {
+    backdrop-filter: blur(15px);
+    font-size: 2.5em;
+    color: black;
+    background-color: whitesmoke;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 5px;
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  .container .todo-new:hover {
+    box-shadow: 0 0 15px #9400ff;
+    border: 3px solid #9400ff;
+  }
+  .container .todo-new p {
+    margin: auto;
+    width: fit-content;
+    caret-color: transparent;
+  }
+  .container .todo-item {
+    border: 3px solid darkblue;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: #000000;
+    min-height: 50px;
+    /* margin: auto; */
+    width: 90%;
+    margin-bottom: 3%;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+  }
+  .list li
+  {
+    min-height: 50px;
+    display: flex;
+    list-style-type: none;
+  }
+  .list li img{
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+  .container .todo-item:hover {
+    box-shadow: 0 0 15px #9400ff;
+    border: 3px solid #9400ff;
+  }
+  .container .todo-item input[type="checkbox"] {
+    margin-left: 20px;
+    cursor: pointer;
+    transform: scale(3);
+  }
+  .container .todo-item textarea[type="text"] {
+    margin-left: 25px;
+    font-size: 2em;
+    font-family: cursive;
+    min-height: 54px;
+    resize: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(15px);
+    color: black;
+    border-style: none;
+    outline: none;
+    caret-color: transparent;   /*makes the blinking cursor transperent or hides*/
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow-y: scroll; /* Add this to always show the scrollbar, even when not scrolling */
+  }
+  /* Customize the scrollbar */
+  .container .todo-item textarea::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .container .todo-item textarea::-webkit-scrollbar-thumb {
+    background: rgba(
+      255,
+      255,
+      255,
+      0.5
+    ); /* Set the scrollbar thumb color */
+    border-radius: 10px; /* Add rounded corners to the scrollbar thumb */
+  }
+
+  .container .todo-item textarea::-webkit-scrollbar-corner {
+    background: transparent; /* Hide the default scrollbar corner */
+  }
+  .container .todo-item input[type="text"]:focus {
+    /* border-style: none; */
+    border: 0px solid blue; /* Change the border color to blue when focused */
+    outline: none;
+  }
