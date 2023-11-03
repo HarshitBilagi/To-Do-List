@@ -13,30 +13,17 @@
         <p class="todo-heading">To-Do</p>
         <div class="todo-new-main">
           <div class="todo-item">
-            <input
-              type="checkbox"
-            />
-            <textarea type="text" rows="1" class="todo-text" value=""></textarea>
+            <!-- <input type="checkbox"/> -->
+            <textarea type="text" rows="1" id="new-item-text" class="todo-text" value="" placeholder="Enter a new task"></textarea>
           </div>
-          <button class="todo-new" type="button" onclick="NewItem()">
+          <button class="todo-new" id="add-new-item" type="button" onclick="document.getElementById('add-new-item').addEventListener('click', NewItem());">
             <p>+</p>
           </button>
         </div>
 
 
-        <ul class="list">
-          <li>
-            <div class="todo-item">
-              <input
-                type="checkbox"
-                id="todo-checkbox"
-                name="display"
-                onclick="StrikeThrough()"
-              />
-              <textarea type="text" rows="1" class="todo-text" name="display" value="" id="input-box"></textarea>
-            </div>
-            <img src="delete_svg.svg" height="50px" width="50px" margin="5px 5px" onclick="">
-          </li>
+        <ul id="uo-list">
+
         </ul>
       </div>
     </div>

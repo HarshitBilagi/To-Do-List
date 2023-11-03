@@ -76,13 +76,13 @@
     align-items: center;
     transition: 0.3s;
   }
-  .list li
+  .new-item-main .todo-item
   {
     min-height: 50px;
     display: flex;
     list-style-type: none;
   }
-  .list li img{
+  .new-item-main img{
     cursor: pointer;
     margin-left: 10px;
     margin-top: 8px;
