@@ -32,16 +32,29 @@
   }
   button {
     backdrop-filter: blur(15px);
-    /* background-color: black; */
+
+    color: black;
+  }
+  button {
+    backdrop-filter: blur(10px);
+    background-color: black;
+
   }
   .todo-new-main {
     display: flex;
     margin-top: 5%;
   }
   .container .todo-new {
+
     font-size: 2.5em;
     backdrop-filter: blur(15px);
     /* color: black; */
+
+    backdrop-filter: blur(15px);
+    font-size: 2.5em;
+    color: black;
+    background-color: whitesmoke;
+
     width: 55px;
     height: 55px;
     cursor: pointer;
@@ -61,6 +74,7 @@
     caret-color: transparent;
   }
 
+
   .new-item-main {
     min-height: 50px;
     display: flex;
@@ -69,6 +83,11 @@
   .container .todo-item {
     border: 3px solid darkblue;
     backdrop-filter: blur(15px);
+
+  .container .todo-item {
+    border: 3px solid darkblue;
+    background-color: whitesmoke;
+
     border-radius: 10px;
     color: #000000;
     min-height: 50px;
@@ -81,7 +100,11 @@
     align-items: center;
     transition: 0.3s;
   }
+
   .new-item-main .todo-item li
+
+  .new-item-main .todo-item
+
   {
     min-height: 50px;
     display: flex;
@@ -124,7 +147,15 @@
   }
 
   .container .todo-item textarea::-webkit-scrollbar-thumb {
+
     background: darkblue; /* Set the scrollbar thumb color */
+
+    background: rgba(
+      255,
+      255,
+      255,
+      0.5
+    ); /* Set the scrollbar thumb color */
     border-radius: 10px; /* Add rounded corners to the scrollbar thumb */
   }
 
