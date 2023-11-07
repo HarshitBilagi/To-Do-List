@@ -13,22 +13,20 @@
         <p class="todo-heading">To-Do</p>
         <div class="todo-new-main">
           <div class="todo-item">
-            <!-- <input type="checkbox"/> -->
+            
             <textarea type="text" rows="1" id="new-item-text" class="todo-text" value="" placeholder="Enter a new task"></textarea>
           </div>
-          <button class="todo-new" id="add-new-item" type="button" onclick="document.getElementById('add-new-item').addEventListener('click', NewItem());">
+          <button class="todo-new" id="add-new-item" type="button" onclick="document.getElementById('add-new-item').addEventListener('click', newItem());">
             <p>+</p>
           </button>
         </div>
 
-
         <ul id="uo-list">
-
         </ul>
+        
       </div>
     </div>
 
     <script src="script.js"></script>
-
   </body>
 </html>
